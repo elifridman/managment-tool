@@ -1,0 +1,10 @@
+<ul class="list-group list-group-horizontal-sm">
+  <li *ngFor="let tile of tiles" class="list-group-item">
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+      <div class="card-body text-success">
+        <div class="color-box" [style.background-color]="tile.color"></div>
+      </div>
+      <div class="card-footer bg-transparent border-success">{{tile.name}}</div>
+    </div>
+  </li>
+</ul>

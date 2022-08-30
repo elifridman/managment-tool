@@ -1,0 +1,25 @@
+<div class="tags-table-wrapper">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Color</th>
+      <th scope="col"><img (click)="onSortByName()" class="sort-name" src="./assets/svg/sort.svg" alt="sort">Name</th>
+      <th scope="col">Created Date</th>
+      <th scope="col">Last Update</th>
+      <th scope="col">Created By</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tag of tags" (click)="onShowTagDetails(tag)">
+      <td>
+        <span class="color" [style.background-color]="tag.color"></span>
+      </td>
+      <td>{{tag.name}}</td>
+      <td>{{tag.createDate | date: 'dd/MM/yyyy' }}</td>
+      <td>{{tag.lastUpdate | date: 'dd/MM/yyyy' }}</td>
+      <td>{{tag.createdBy}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

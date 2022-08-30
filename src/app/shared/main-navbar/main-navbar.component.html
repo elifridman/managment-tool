@@ -1,5 +1,6 @@
 <nav class="navbar justify-content-between management-tool-navbar">
   <div class="container-fluid">
+    <p class="navbar-brand"> Hello {{userName}}</p>
     <a class="navbar-brand" [routerLink]="['/']">Management Tool</a>
     <div class="nav-icons-wrapper">
       <a class="navbar-brand" [routerLink]="['/tile-list']">
@@ -8,8 +9,14 @@
       <a class="navbar-brand" [routerLink]="['/tag-list']">
         <img src="./assets/svg/ListMode.svg" width="24" height="22" alt="list-page">
       </a>
-      <a class="navbar-brand" [routerLink]="['/tag-list/new']">
+      <a class="navbar-brand" (click)="onNewIconClicked()">
         <img src="./assets/svg/CreateNew.svg" width="32" height="32" alt="creat new">
+      </a>
+      <a *ngIf="!isRegistered" class="link-primary" (click)="onRegister()">
+        Register
+      </a>
+      <a *ngIf="!isLogin" class="link-primary" (click)="onLogin()">
+        Login
       </a>
     </div>
   </div>

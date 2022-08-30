@@ -1,5 +1,33 @@
 .app-wrapper{
+  height: 100%;
+  position: relative;
   background: #F2F6F9 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 2rem;
+  .btn-close {
+    position: absolute;
+    right:0;
+  }
+  .mat-sidenav-container {
+    height: 100%;
+    border: none;
+  }
+
+  .mat-drawer {
+    background-color: #F2F6F9;
+    width: 767px;
+  }
+
+  .mat-sidenav-content {
+    height: 100%;
+    align-items: center;
+    background-color: #F2F6F9;
+  }
+
+  .mat-sidenav {
+    padding: 20px;
+  }
+
 }
+
+

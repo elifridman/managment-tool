@@ -1,0 +1,38 @@
+//http://localhost:3000/tags
+
+.list-group-horizontal-sm>.list-group-item:first-child {
+
+}
+
+.list-group-item {
+  padding: 0;
+  background-color: #F2F6F9;
+  border: none;
+}
+
+.list-group-horizontal-sm {
+  background-color: #F2F6F9;
+}
+
+.card {
+  margin: 0 15px 0 15px;
+  border: none!important;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  border: none;
+  background-color: #F2F6F9;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+}
+
+

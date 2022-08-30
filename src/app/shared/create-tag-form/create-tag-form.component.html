@@ -1,0 +1,31 @@
+<div class="create-new-form">
+  <h4>{{title}}</h4>
+  <form [formGroup]="createNewForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="inputTagName">Tag Name</label>
+          <input formControlName="name" type="text" class="form-control" id="inputTagName"  placeholder="Enter Tag Name">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <input (colorPickerSelect)="onColorPickerSelect($event)" class="form-control color-picker" formControlName="color" [colorPicker]="color" [style.background]="color"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="inputTagDescription">Tag Description</label>
+          <textarea formControlName="description" class="form-control" id="inputTagDescription"  placeholder="Enter Tag Description"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button [hidden]="!isCreateMode" [disabled]="!this.createNewForm.valid"   class="btn btn-primary create-new-submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

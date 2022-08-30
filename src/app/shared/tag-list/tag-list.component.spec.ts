@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TilesListPageComponent } from './tiles-list-page.component';
+import { TagListComponent } from './tag-list.component';
 
-describe('TilesListPageComponent', () => {
-  let component: TilesListPageComponent;
-  let fixture: ComponentFixture<TilesListPageComponent>;
+describe('TagListComponent', () => {
+  let component: TagListComponent;
+  let fixture: ComponentFixture<TagListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TilesListPageComponent ]
+      declarations: [ TagListComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TilesListPageComponent);
+    fixture = TestBed.createComponent(TagListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

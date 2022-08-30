@@ -1,4 +1,4 @@
 <div class="input-group mb-3 location-field-wrapper">
-  <input type="text" class="form-control" placeholder="url" aria-label="url" aria-describedby="button-url">
-  <button class="btn btn-primary" type="button" id="button-url">Go</button>
+  <input type="text" [(ngModel)]="pathValue" class="form-control" placeholder="url" aria-label="url" aria-describedby="button-url">
+  <button (click)="onSendRequest()" class="btn btn-primary" type="button" id="button-url">Go</button>
 </div>

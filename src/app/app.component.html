@@ -1,7 +1,16 @@
 <div class="app-wrapper">
-  <!-- HEADER -->
-  <app-management-tool-header></app-management-tool-header>
-  <!-- PAGES -->
-  <router-outlet></router-outlet>
-  <!-- FOOTER -->
+  <mat-sidenav-container [hasBackdrop] = false>
+    <mat-sidenav position="end"  mode="over" [(opened)]="isSideNavOpened">
+      <button (click)="onSideNavClose()"  type="button" class="btn-close" aria-label="Close"></button>
+      <app-create-tag-form *ngIf="isSideNavOpened"></app-create-tag-form>
+    </mat-sidenav>
+    <mat-sidenav-content class="side-nav-content">
+      <!-- HEADER -->
+      <app-management-tool-header (searchValueEmitter)="onSearchValueChange($event)"></app-management-tool-header>
+      <!-- PAGES -->
+      <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 </div>

@@ -1,0 +1,13 @@
+<div class="item-list-page-wrapper">
+  <app-tag-list
+    *ngIf="filteredItems && isTagsPage"
+    [tags]="filteredItems"
+    (selectedTableTag)="onSelectedTableItem($event)"
+    (sortItemsByName)="onSortItemsByName()" >
+  </app-tag-list>
+  <app-tiles-list
+    *ngIf="filteredItems && isTilesPage"
+    [tiles]="filteredItems" >
+  </app-tiles-list>
+</div>
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-filter-field',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterFieldComponent implements OnInit {
 
+  @Output() searchValueEmitter = new EventEmitter<string>();
+  searchValue: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSearchValueChanged() {
+    this.searchValueEmitter.emit(this.searchValue);
+    console.log(this.searchValue);
   }
 
 }

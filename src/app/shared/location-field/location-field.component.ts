@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-location-field',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./location-field.component.scss']
 })
 export class LocationFieldComponent implements OnInit {
-
+  @Output() sendRequestEmitter = new EventEmitter<string>();
+  pathValue: string = ''
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSendRequest() {
+    this.sendRequestEmitter.emit(this.pathValue);
   }
 
 }

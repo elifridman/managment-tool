@@ -1,21 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {TagListPageComponent} from "./pages/tag-list-page/tag-list-page.component";
-import {TileListPageComponent} from "./pages/tiles-list-page/tiles-list-page.component";
 import {NotFoundPageComponent} from "./pages/not-found-page/not-found-page.component";
+import {ManagementToolPageComponent} from "./pages/management-tool-page/management-tool-page.component";
 
 const routes: Routes = [
-  { path: 'tag-list', component: TagListPageComponent, children: [
-      {
-        path: 'new',
-        component: TagListPageComponent,
-      },
-      {
-        path: ':tagId/details',
-        component: TagListPageComponent,
-      },
-    ], },
-  { path: 'tile-list', component: TileListPageComponent },
+  { path: 'tag-list', component: ManagementToolPageComponent, data: {pageType: 'tags' } },
+  { path: 'tile-list', component: ManagementToolPageComponent, data: {pageType: 'tiles' } },
   { path: '',   redirectTo: '/tag-list', pathMatch: 'full' },
   { path: '**', component: NotFoundPageComponent }
 ];

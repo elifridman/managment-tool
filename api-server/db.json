@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "email": "thisiselimail@gmail.com",
+      "password": "$2a$10$Rn1K/h1FFlIxL0EQ5m0VIuDw.z6PcRmWS6stMIXDEjYWCyE4zhvb6",
+      "userName": "eli",
+      "id": 1
+    },
+    {
+      "email": "this.iselimai@gmail.com",
+      "password": "$2a$10$WPTZ9ZZbRap9HV4YLrB9COBQB5zEVIeYHBifafwlqUJAS0VCB9yka",
+      "userName": "eli",
+      "id": 2
+    }
+  ],
+  "tags": [
+    {
+      "id": "1",
+      "name": "Car accident",
+      "description": "",
+      "createDate": "1661769600830",
+      "lastUpdate": "1661769600830",
+      "createdBy": "Ori Lugasi",
+      "color": "#008000"
+    },
+    {
+      "id": "2",
+      "name": "Murder",
+      "description": "",
+      "createDate": "1661769600830",
+      "lastUpdate": "1661769600830",
+      "createdBy": "Chen Meir",
+      "color": "#8B0000"
+    },
+    {
+      "id": "3",
+      "name": "Suspect",
+      "description": "",
+      "createDate": "1661769600830",
+      "lastUpdate": "1661769600830",
+      "createdBy": "Or Bar",
+      "color": "#FF8C00"
+    },
+    {
+      "name": "aaa",
+      "createDate": "1661769600830",
+      "lastUpdate": "1661769600830",
+      "createdBy": "eli",
+      "color": "#e93428",
+      "id": "8Fqnzsr"
+    },
+    {
+      "name": "machine",
+      "createDate": "1661769600830",
+      "lastUpdate": "1661769600830",
+      "createdBy": "eli",
+      "color": "#e94d28",
+      "id": "FImDlBL"
+    },
+    {
+      "name": "kolo",
+      "createDate": "1661793880906",
+      "lastUpdate": "1661793880906",
+      "createdBy": "eli",
+      "color": "#b6e928",
+      "id": "q30k0zP"
+    },
+    {
+      "name": "adsgfad",
+      "createDate": "1661845608914",
+      "lastUpdate": "1661845608914",
+      "createdBy": "eli",
+      "color": "#e95528",
+      "id": "zA1ONty"
+    },
+    {
+      "name": "eeeee",
+      "createDate": "1661845629553",
+      "lastUpdate": "1661845629553",
+      "createdBy": "eli",
+      "color": "#32e928",
+      "id": "i98B3PI"
+    }
+  ]
+}

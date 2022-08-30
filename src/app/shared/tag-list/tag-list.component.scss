@@ -1,0 +1,41 @@
+.tags-table-wrapper .table {
+  border-collapse:separate;
+  border-spacing:0 15px;
+  thead {
+    background-color: #F2F6F9;
+    th {
+      font-size: 1rem;
+      border: none;
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+      .sort-name {
+        padding: 4px;
+      }
+    }
+  }
+  tbody {
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    background-color: #ffffff;
+    color: gray;
+    tr {
+      height: 71px;
+      padding-bottom: 2px;
+      opacity: 1;
+      border: none;
+      box-shadow: 0px 3px 6px #00000029;
+    }
+    td {
+      border: none;
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+      .color {
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+      }
+    }
+  }
+}

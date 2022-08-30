@@ -7,9 +7,20 @@ import { LocationFieldComponent } from './shared/location-field/location-field.c
 import { MainNavbarComponent } from './shared/main-navbar/main-navbar.component';
 import { FilterFieldComponent } from './shared/filter-field/filter-field.component';
 import { ManagementToolHeaderComponent } from './management-tool-header/management-tool-header.component';
-import { TagListPageComponent } from './pages/tag-list-page/tag-list-page.component';
-import {TileListPageComponent} from "./pages/tiles-list-page/tiles-list-page.component";
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { TagListComponent } from './shared/tag-list/tag-list.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {ApiService} from "./services/api-service";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { TagFormComponent } from './shared/tag-form/tag-form.component';
+import { AuthFormComponent } from './shared/auth-form/auth-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from'@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { CreateTagFormComponent } from './shared/create-tag-form/create-tag-form.component';
+import {ColorPickerModule} from "ngx-color-picker";
+import { TilesListComponent } from './shared/tiles-list/tiles-list.component';
+import {ManagementToolPageComponent} from "./pages/management-tool-page/management-tool-page.component";
 
 
 
@@ -20,15 +31,26 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     MainNavbarComponent,
     FilterFieldComponent,
     ManagementToolHeaderComponent,
-    TagListPageComponent,
-    TileListPageComponent,
-    NotFoundPageComponent
+    ManagementToolPageComponent,
+    NotFoundPageComponent,
+    TagListComponent,
+    TagFormComponent,
+    AuthFormComponent,
+    CreateTagFormComponent,
+    TilesListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatSidenavModule,
+    ReactiveFormsModule,
+    ColorPickerModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

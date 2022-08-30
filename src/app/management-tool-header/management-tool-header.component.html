@@ -1,8 +1,16 @@
 <div class="header-wrapper">
   <!-- location field -->
-  <app-location-field></app-location-field>
+  <app-location-field (sendRequestEmitter)="OnSendRequest($event)"></app-location-field>
   <!-- navbar field -->
-  <app-main-navbar></app-main-navbar>
+  <app-main-navbar
+    [user]="user"
+    [isLogin] = "isLogin"
+    [isRegistered] = "isRegistered"
+    (newIconClickedEmitter)="onNewIconClicked()"
+    (registerLinkClickedEmitter)="onRegisterLinkClicked()"
+    (loginLinkClickedEmitter)="onLoginLinkClicked()" ></app-main-navbar>
   <!-- filter field -->
-  <app-filter-field></app-filter-field>
+  <app-filter-field (searchValueEmitter)="onSearchValueChange($event)" ></app-filter-field>
 </div>
+
+
